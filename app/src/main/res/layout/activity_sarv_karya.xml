@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/corner_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/marathi"
+            android:gravity="center"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="svR mD.;ace kayR"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sw_refesh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/marathi"
+                    android:gravity="center"
+                    android:text="vrI*# gurv smaj mD.;I kayRkar`I v kam"
+                    android:textColor="@color/sub_head_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:fontFamily="@font/marathi"
+                    android:text="smajatIl svR kayRkar`I nemne, jaStI jaSt f.D go;a kr`e,  svR kayRkar`Is kamkaj va3p kr`e v kayR-kar`I jr Aaple kam krIt nsel tr Tyace pd rdd kr~yaca A2Ikar vrIS3 mD.; kDe rahIl,  svR Aavk-javk hIsab #ev`e,  dr mha mI3I.g #ev`e v jma qcR daqv`e,  p/Tyek zon p/muq jrur va3Lyas Tyana mdt kr`e, baherIl ]6ra`I kr`e||||"
+                    android:textColor="@color/nav_blue"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner_button_bg"
+                        android:fontFamily="@font/marathi"
+                        android:gravity="center"
+                        android:onClick="swasdfomR"
+                        android:padding="@dimen/_5sdp"
+                        android:text="swasd fomR"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner_button_bg"
+                        android:fontFamily="@font/marathi"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="kayRkar`I cI kam"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:layout_gravity="center"
+                        android:id="@+id/pb_data_loader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rc_varisda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="3/S3 mD.; kayRkar`I v kam"
+                        android:textColor="@color/sub_head_color"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="qalIl svR kmI3Invr l9 raq`, dr v8IR ho`ara kayRk/macI tarIq fIKs kr`, p/Tyek kayR-k/mas hol buk kr`e, g/a].D fIKs kr`e, ) p/Tyek 0rIya 3/S3InI p/Tyek 0rIyatIl kayRkar`I sobt rha`e, va8IRk jnrl swa 6e`e."
+                        android:textColor="@color/nav_blue"
+                        android:textSize="18sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rc_trast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="ivvah smItI kayRkar`I v kam"
+                        android:textColor="@color/sub_head_color"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="vril 3/S3 m.D;ane tarIq nKkI zaLyan.tr tI tarIq vo3s0p vr jaher kr`e, p/Tyek v2u-vr nod`I kr`e, Jyace lGn hot Asel Tyace mulakat kr`e, Tya dIvxI Aayojn v lagnara qcR kr`e,  v to qcR 3S3 mD.;a kDe jma kr`e|, vrIl svR Aayojn ivvah smItIne Aa`I 0rIya 3/S3InIe krayce Aahe|"
+                        android:textColor="@color/nav_blue"
+                        android:textSize="18sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rc_vava"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="xI9` smItI kayRkar`I v kam"
+                        android:textColor="@color/sub_head_color"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="p/Tyek mulace makRsI3 jma kr`e, kayRk.macI tarIq k!v`e, Tya dIvsaca sMpu`R kayR ix9` smItenI krayce rahIl, Tya dIvxI Aayojn v lagnara qcR kr`e v to qcR 3S3 mD.;a kDe jma kr`e, vrIl svR Aayojn ix9` smItIne v 0rIya 3/S3Ine krayce Aahe."
+                        android:textColor="@color/nav_blue"
+                        android:textSize="18sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rc_shikshan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="k/Ike3 kayRkar`I v kam"
+                        android:textColor="@color/sub_head_color"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="3/S3 mD.;ane nKkI keleLya tarqes Aayojn kr`e v tI tarIq svaRna k;v`e, qIlaDIce nav nod.`I kr`e, g/a]ND tpas`I kr`e,  Tya dIvxI Aayojn v lagnara qcR kr`e v to qcR 3/S3 mD.;a kDe jma kr`e., vrIl svR Aayojn kI/ke3 kmI3InI Aa`I 0rIya 3/S3InI krayce raHIl"
+                        android:textColor="@color/nav_blue"
+                        android:textSize="18sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rc_criket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="mhIla mD.; kayRkar`I v kam"
+                        android:textColor="@color/sub_head_color"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/marathi"
+                        android:text="mhIla mD.;ace kayR jaStIt jaSt swasd bnv`e, va8IRk mhIla mD.; h;dI-ku.ku kayRk/m Aayojn kr`e, 3/S3 mD.;ane nKkI keleLya tarqes Aayojn kr`e v tI tarIq svaRna k;v`e,     qcR kr~yaca A2Ikar mhIla mD.; v 0rIya 3/S3I ya.ca rahIl v to qcR 3S3 mD.;a kDe jma kr`e|"
+                        android:textColor="@color/nav_blue"
+                        android:textSize="18sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rc_mahila"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

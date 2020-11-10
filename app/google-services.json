@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "637645896493",
+    "firebase_url": "https://sgsfirebaseproject-d8f65.firebaseio.com",
+    "project_id": "sgsfirebaseproject-d8f65",
+    "storage_bucket": "sgsfirebaseproject-d8f65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637645896493:android:b729c00fb2b50268a7f1a4",
+        "android_client_info": {
+          "package_name": "com.gurav.samaj.surat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637645896493-80qj1k1h6d0vl2en71vib4mdu5qt31lo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gurav.samaj.surat",
+            "certificate_hash": "b421b0186d184838eccae3dc8cd899d8c43a4f9d"
+          }
+        },
+        {
+          "client_id": "637645896493-2i1k5dgvvaiop7slqpiornnigf32s50t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSxnVXwy8Wg8Espk8WGW_ym0gtQkYJsN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637645896493-2i1k5dgvvaiop7slqpiornnigf32s50t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

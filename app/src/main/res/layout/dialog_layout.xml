@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_edit_black_24dp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Edit Product"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="fitEnd" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/iv_full_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="sdcmlks n lsnclknvdkln"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:id="@+id/iv_full_src_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/iv_full_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="sdcmlks n lsnclknvdkln"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/iv_full_dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="sdcmlks n lsnclknvdkln sdcscscsdcsdcsdcsd sdcvsdcscsdc"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

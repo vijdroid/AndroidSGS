@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.KhataVahi_detail_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/corner_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/marathi"
+                android:gravity="center"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:text="qata vhI"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/sw_refesh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="#F3F3F3"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_7sdp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/marathi"
+                            android:text="qata vhI sara.x"
+                            android:textColor="@color/purple"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/only_border"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_7sdp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_3sdp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:fontFamily="@font/marathi"
+                                    android:text="jma rKkm"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_cedit_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="0"
+                                    android:textColor="@color/green"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_3sdp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:fontFamily="@font/marathi"
+                                    android:text="qcR rKkm"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_debite_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="0"
+                                    android:textColor="@color/red"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/black" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_3sdp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:fontFamily="@font/marathi"
+                                    android:text="ixLk rKkm"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_final_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="0"
+                                    android:textColor="@color/green"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="#F3F3F3"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_7sdp"
+                            android:visibility="visible">
+
+
+                            <TextView
+                                android:id="@+id/txt_statment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/corner_bg"
+                                android:fontFamily="@font/marathi"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_20sdp"
+                                android:paddingTop="@dimen/_7sdp"
+                                android:paddingRight="@dimen/_20sdp"
+                                android:paddingBottom="@dimen/_7sdp"
+                                android:text="S3e3me.3 pha"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_5sdp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/marathi"
+                                    android:gravity="center"
+                                    android:text="0kun jma"
+                                    android:textColor="@color/purple"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:onClick="showAlldendar">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_gravity="center"
+                                        android:layout_toLeftOf="@+id/txt_dengi_amt"
+                                        android:fontFamily="@font/marathi"
+                                        android:gravity="left"
+                                        android:text="0kun dengI"
+                                        android:textColor="@color/sub_head_color"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_dengi_amt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="center"
+                                        android:gravity="right"
+                                        android:text="0"
+                                        android:textColor="@color/green"
+                                        android:textSize="15sp" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:onClick="showExtraIncome">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_gravity="center"
+                                        android:layout_toLeftOf="@+id/txt_ei_amt"
+                                        android:fontFamily="@font/marathi"
+                                        android:gravity="left"
+                                        android:text="[tr Aavk"
+                                        android:textColor="@color/sub_head_color"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_ei_amt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="center"
+                                        android:gravity="right"
+                                        android:text="0"
+                                        android:textColor="@color/green"
+                                        android:textSize="15sp" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:onClick="showFondIncome">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_gravity="center"
+                                        android:layout_toLeftOf="@+id/txt_found"
+                                        android:fontFamily="@font/marathi"
+                                        android:gravity="left"
+                                        android:text="ix9` simtI f.D"
+                                        android:textColor="@color/sub_head_color"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_found"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="center"
+                                        android:gravity="right"
+                                        android:text="0"
+                                        android:textColor="@color/green"
+                                        android:textSize="15sp" />
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:onClick="showAllInteres"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/marathi"
+                                            android:gravity="left"
+                                            android:text="lon ce hPte"
+                                            android:textColor="@color/sub_head_color"
+                                            android:textSize="18sp" />
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toLeftOf="@+id/txt_intrest_amt"
+                                            android:fontFamily="@font/marathi"
+                                            android:gravity="left"
+                                            android:text="   mu±l"
+                                            android:textColor="@color/nav_blue"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_intrest_amt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="center"
+                                            android:gravity="right"
+                                            android:text="0"
+                                            android:textColor="@color/green"
+                                            android:textSize="15sp" />
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toLeftOf="@+id/txt_vyaj_amt"
+                                            android:fontFamily="@font/marathi"
+                                            android:gravity="left"
+                                            android:text="   Vyaj"
+                                            android:textColor="@color/nav_blue"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_vyaj_amt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="center"
+                                            android:gravity="right"
+                                            android:text="0"
+                                            android:textColor="@color/green"
+                                            android:textSize="15sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toLeftOf="@+id/txt_letp_amt"
+                                            android:fontFamily="@font/marathi"
+                                            android:gravity="left"
+                                            android:text="   le3 fI"
+                                            android:textColor="@color/nav_blue"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_letp_amt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="center"
+                                            android:gravity="right"
+                                            android:text="0"
+                                            android:textColor="@color/green"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/_1sdp"
+                                            android:layout_below="@+id/txt_letp_amt"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="@dimen/_20sdp"
+                                            android:background="@color/black"
+                                            android:gravity="right"
+                                            android:textSize="18sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toLeftOf="@+id/txt_inttotal_amt"
+                                            android:fontFamily="@font/marathi"
+                                            android:gravity="left"
+                                            android:text="   3o3l"
+                                            android:textColor="@color/nav_blue"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_inttotal_amt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="center"
+                                            android:gravity="right"
+                                            android:text="0"
+                                            android:textColor="@color/green"
+                                            android:textSize="15sp" />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_gravity="center"
+                                        android:layout_toLeftOf="@+id/txt_form_income"
+                                        android:fontFamily="@font/marathi"
+                                        android:gravity="left"
+                                        android:text="fomR fI"
+                                        android:textColor="@color/sub_head_color"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_form_income"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="center"
+                                        android:gravity="right"
+                                        android:text="0"
+                                        android:textColor="@color/green"
+                                        android:textSize="15sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/black" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_5sdp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/marathi"
+                                    android:gravity="center"
+                                    android:text="0kun qcR"
+                                    android:textColor="@color/purple"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:onClick="showAllLoaners">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toLeftOf="@+id/txt_tloan_amt"
+                                            android:fontFamily="@font/marathi"
+                                            android:gravity="left"
+                                            android:text="lon va3p"
+                                            android:textColor="@color/sub_head_color"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_tloan_amt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="center"
+                                            android:gravity="right"
+                                            android:text="0"
+                                            android:textColor="@color/red"
+                                            android:textSize="15sp" />
+
+                                    </RelativeLayout>
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:onClick="showExp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toLeftOf="@+id/txt_texp"
+                                            android:fontFamily="@font/marathi"
+                                            android:gravity="left"
+                                            android:text="0kun qcR"
+                                            android:textColor="@color/sub_head_color"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_texp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="center"
+                                            android:gravity="right"
+                                            android:text="0"
+                                            android:textColor="@color/red"
+                                            android:textSize="15sp" />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_nodata_nonet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_sad_square" />
+
+        <TextView
+            android:id="@+id/tv_err_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ProgressBar
+
+        android:id="@+id/pb_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
